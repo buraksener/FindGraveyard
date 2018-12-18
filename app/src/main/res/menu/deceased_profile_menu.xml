@@ -1,0 +1,35 @@
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.sener35gmail.burak.myapplication.Profile">
+   <!-- <item
+        android:id="@+id/action_message"
+        android:orderInCategory="100"
+        android:title="Bu profili oluşturan kişiye mesaj gönder"
+        app:showAsAction="never"
+        />
+
+    <item
+        android:id="@+id/action_auth"
+        android:orderInCategory="100"
+        android:title="Yetki iste"
+        app:showAsAction="never"
+        />
+    <item
+
+        android:title="bildir"
+        android:orderInCategory="100"
+        app:showAsAction="never"
+        android:id="@+id/action_report"/> !-->
+
+    <item
+        android:id="@+id/report"
+        android:orderInCategory="100"
+        android:title="Şikayet et/Bildir"
+        app:showAsAction="never"/>
+
+
+
+
+</menu>

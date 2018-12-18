@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context="com.sener35gmail.burak.myapplication.OCR">
+
+    <Button
+        android:id="@+id/choose_from_gallery"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:text="@string/choose_from_galery"
+        android:background="@drawable/button_opendatepicker_radious"
+        tools:context=".MainActivity" />
+
+    <Button
+        android:id="@+id/take_a_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_from_gallery"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/take_a_photo"
+        android:background="@drawable/button_set_user_info_radious"
+        tools:context=".MainActivity" />
+
+
+    <TextView
+        android:id="@+id/detected_text"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/take_a_photo"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="33dp"
+        android:background="#EEEEEE"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textSize="30sp"
+        android:textColor="#000000" />
+
+    <ListView
+        android:id="@+id/ListViewResult"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/detected_text"
+        android:layout_marginTop="17dp"
+        android:background="@drawable/listview_color_and_settings"
+        android:cacheColorHint="@color/colorPrimaryDark" />
+
+</RelativeLayout>

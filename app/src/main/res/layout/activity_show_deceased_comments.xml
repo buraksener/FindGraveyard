@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:id="@+id/myRelativeLayout"
+    tools:context="com.sener35gmail.burak.myapplication.ShowDeceasedComments">
+
+    <EditText
+        android:id="@+id/Comment"
+        android:layout_width="320dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:ems="10"
+        android:hint="@string/yorum_gir"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="10"
+        android:minLines="1"
+        android:scrollbars="vertical"
+        android:textColor="#000000"
+        android:textColorHint="#FDFEFE" />
+
+    <ListView
+        android:id="@+id/ListViewComments"
+        style="@style/Widget.AppCompat.Light.ListView.DropDown"
+        android:layout_width="match_parent"
+        android:layout_height="3000dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Docomment"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/listview_color_and_settings"
+        android:cacheColorHint="@color/colorPrimaryDark"
+        android:scrollbars="horizontal|vertical">
+
+
+    </ListView>
+
+    <Button
+        android:id="@+id/Docomment"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Comment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/yorum_yap"
+        android:background="@drawable/button_opendatepicker_radious"
+        android:textColor="#000000"/>
+
+    <Switch
+        android:id="@+id/switch_comment"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/Comment"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/Comment"
+        android:layout_marginTop="8dp"
+
+        android:text="@string/switch_comments"
+        android:textColor="#000000"/>
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/back"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        />
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_down_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/Comment">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</RelativeLayout>

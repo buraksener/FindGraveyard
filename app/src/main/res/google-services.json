@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "1008854481499",
+    "firebase_url": "https://findgraveyard.firebaseio.com",
+    "project_id": "findgraveyard",
+    "storage_bucket": "findgraveyard.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1008854481499:android:05b7b931b2182524",
+        "android_client_info": {
+          "package_name": "com.sener35gmail.burak.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1008854481499-5mbkn4jmtvv183evj3197eaps9kdbqkb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKcfX7I946wzKbPSnohJ_OapAPbdOVbt4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

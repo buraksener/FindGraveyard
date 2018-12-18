@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_color"
+    android:orientation="vertical"
+    tools:context="com.sener35gmail.burak.myapplication.DeceasedProfile">
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/background_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/Deceased_imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+
+            android:layout_below="@+id/toolbar"
+            android:layout_toEndOf="@+id/et_DeceasedBio"
+            android:layout_toRightOf="@+id/et_DeceasedBio"
+            android:contentDescription="@string/DeceasedImage"
+            android:src="@drawable/profile"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/et_DecesedFullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/Deceased_imageView"
+            android:layout_marginLeft="12dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="28dp"
+            android:text="@string/et_DeceasedFullname"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/et_DeceasedDOB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_DecesedFullname"
+            android:layout_alignStart="@+id/et_DecesedFullname"
+            android:layout_below="@+id/et_DecesedFullname"
+            android:layout_marginTop="22dp"
+            android:text="@string/et_Deceased_DOB"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/et_DeceasedDOD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_DeceasedDOB"
+            android:layout_alignStart="@+id/et_DeceasedDOB"
+            android:layout_below="@+id/et_DeceasedDOB"
+            android:layout_marginTop="20dp"
+            android:text="@string/et_Deceased_DOD"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/et_DeceasedGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_DeceasedDOD"
+            android:layout_alignStart="@+id/et_DeceasedDOD"
+            android:layout_below="@+id/et_DeceasedDOD"
+            android:layout_marginTop="18dp"
+            android:text="@string/et_DeceasedGender"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/et_DeceasedJob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_DeceasedGender"
+            android:layout_alignStart="@+id/et_DeceasedGender"
+            android:layout_below="@+id/et_DeceasedGender"
+            android:layout_marginTop="20dp"
+            android:text="@string/et_DeceasedJob"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <TextView
+            android:id="@+id/et_DeceasedBio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/et_DeceasedJob"
+            android:layout_alignStart="@+id/et_DeceasedJob"
+            android:layout_below="@+id/et_DeceasedJob"
+            android:layout_marginTop="10dp"
+            android:text="@string/et_DeceasedBio"
+            android:textColor="#000000"
+            android:textSize="21sp" />
+
+        <Button
+            android:id="@+id/showGraveLocation"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/et_DeceasedBio"
+            android:layout_alignStart="@+id/et_DeceasedBio"
+            android:layout_below="@+id/et_DeceasedBio"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="61dp"
+            android:background="@drawable/button_opendatepicker_radious"
+            android:text="@string/mezar_konumunu_g_ster" />
+
+        <Button
+            android:id="@+id/showComments"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignBaseline="@+id/showGraveLocation"
+            android:layout_alignBottom="@+id/showGraveLocation"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_toEndOf="@+id/showGraveLocation"
+            android:layout_toRightOf="@+id/showGraveLocation"
+            android:background="@drawable/button_radious_show_comments"
+            android:text="@string/yorumlar_g_r_yorum_yap" />
+
+        <ImageButton
+            android:id="@+id/backToSearch"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/toolbar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/ic_arrow_back_black_24dp"
+            android:contentDescription="@string/back_to_search_page" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/et_DeceasedDOB"
+            android:layout_toEndOf="@+id/et_DeceasedDOB"
+            android:layout_toRightOf="@+id/et_DeceasedDOB"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_DeceasedDOB"
+            android:layout_alignBottom="@+id/et_DeceasedDOB"
+            android:layout_toEndOf="@+id/et_DeceasedDOB"
+            android:layout_toRightOf="@+id/et_DeceasedDOB"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_DeceasedDOD"
+            android:layout_alignBottom="@+id/et_DeceasedDOD"
+            android:layout_toEndOf="@+id/et_DeceasedDOB"
+            android:layout_toRightOf="@+id/et_DeceasedDOB"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView24"
+            android:layout_alignStart="@+id/textView24"
+            android:layout_alignTop="@+id/et_DeceasedGender"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/et_DeceasedJob"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_toEndOf="@+id/et_DecesedFullname"
+            android:layout_toRightOf="@+id/et_DecesedFullname"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/et_DeceasedBio"
+            android:layout_below="@+id/textView26"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/et_DeceasedDOD"
+            android:layout_toRightOf="@+id/et_DeceasedDOD"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+</ScrollView>

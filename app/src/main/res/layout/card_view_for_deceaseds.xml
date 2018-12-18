@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    app:ignore="NamespaceTypo">
+
+    <android.support.v7.widget.CardView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:id="@+id/cardView_for_deceased"
+        android:layout_gravity="center"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardMaxElevation="1dp"
+        card_view:cardElevation="1dp"
+        card_view:cardUseCompatPadding="true"
+        card_view:cardPreventCornerOverlap="false"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background_color2"
+            android:padding="6dp"
+            >
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/deceased_photo"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:contentDescription="@string/deceased_image"
+                android:layout_alignParentStart="true"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/profile"
+                app:civ_border_width="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tw_deceased_name"
+                android:textSize="20sp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/white"
+                android:textStyle="italic"
+                android:layout_toRightOf="@+id/deceased_photo"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/deceased_photo"
+                android:layout_marginStart="16dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tw_deceased_surname"
+                android:textSize="20sp"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/tw_deceased_name"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/tw_deceased_name" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tw_deceased_birthdate"
+                android:layout_toRightOf="@+id/deceased_photo"
+                android:textStyle="italic"
+                android:textSize="20sp"
+                android:layout_below="@+id/tw_deceased_name"
+                android:textColor="@color/white"
+                android:layout_toEndOf="@+id/deceased_photo"/>
+
+            <TextView
+                android:id="@+id/tw_deceased_deathDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/deceased_photo"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:layout_below="@+id/tw_deceased_birthdate"
+                android:textSize="20sp" android:layout_toEndOf="@+id/deceased_photo"/>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

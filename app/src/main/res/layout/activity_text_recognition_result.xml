@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:gravity="center_horizontal"
+    tools:context="com.sener35gmail.burak.myapplication.TextRecognitionResult">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#DEE0ED"
+            app:cardUseCompatPadding="true"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="3dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/d_img"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:textSize="21sp"
+                    app:civ_border_color="@color/black" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/d_img"
+                    android:layout_marginTop="8dp"
+                    android:id="@+id/d_name"
+                    android:text="@string/d_ad_soyad"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/d_img"
+                    android:id="@+id/d_surname"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    android:layout_toRightOf="@id/d_name" android:layout_toEndOf="@id/d_name" android:layout_marginStart="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_gender"
+                    android:layout_below="@id/d_surname"
+                    android:paddingTop="3dp"
+                    android:textSize="21sp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/cinsiyet"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_job"
+                    android:text="@string/meslek"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/d_gender"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_birth"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/d_job"
+                    android:textSize="21sp"
+                    android:text="@string/do_um_tarihi"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_death"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/d_birth"
+                    android:textSize="21sp"
+                    android:text="@string/l_m_tarihi"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_bio"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@id/d_death"
+                    android:text="@string/biyografi"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/d_bio2"
+                    android:layout_toRightOf="@id/d_bio"
+                    android:textColor="@color/black"
+                    android:paddingTop="3dp"
+                    android:textSize="21sp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_below="@id/d_death"
+                    android:layout_toEndOf="@id/d_bio" android:layout_marginStart="5dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deceased_fullname"
+                    android:layout_below="@id/d_img"
+                    android:layout_toRightOf="@id/d_name"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="21sp"
+                    android:textColor="@color/black" android:layout_marginStart="5dp" android:layout_toEndOf="@id/d_name" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deceased_gender"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    android:layout_below="@id/d_name"
+                    android:layout_toRightOf="@id/d_gender"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginStart="5dp" android:layout_toEndOf="@id/d_gender" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deceased_job"
+                    android:layout_below="@id/d_gender"
+                    android:layout_toRightOf="@id/d_job"
+                    android:paddingTop="5dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="21sp" android:layout_toEndOf="@id/d_job" android:layout_marginStart="5dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deceased_birthdate"
+                    android:paddingTop="3dp"
+                    android:layout_below="@id/d_job"
+                    android:layout_toRightOf="@id/d_birth"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/black"
+                    android:textSize="21sp"
+                    android:layout_marginStart="5dp" android:layout_toEndOf="@id/d_birth" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/deceased_deathdate"
+                    android:layout_below="@id/d_birth"
+                    android:layout_toRightOf="@+id/d_death"
+                    android:paddingTop="3dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="21sp"
+                    android:textColor="@color/black"
+                    android:layout_marginStart="5dp" android:layout_toEndOf="@+id/d_death"/>
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </android.support.v7.widget.CardView>
+
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/UserProfil"
+        android:icon="@drawable/ic_account_circle_black_24dp"
+        android:title="@string/profil_navbar"/>
+    <item
+        android:id="@+id/AddDeceased"
+        android:icon="@drawable/ic_person_add_black_24dp"
+        android:title="@string/merhum_ekle"/>
+    <item
+        android:id="@+id/SearchDeceased"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="@string/ara"/>
+    <item android:id="@+id/ContactGraveCareGiver"
+          android:icon="@drawable/ic_contact_phone_black_24dp"
+          android:title="@string/mezar_bak_c_s_bul"/>
+    <item
+        android:id="@+id/ScanEpitaph"
+        android:icon="@drawable/ic_scanner_black_24dp"
+        android:title="@string/mezarta_tarama"/>
+
+</menu>

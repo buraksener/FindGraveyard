@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    tools:context="com.sener35gmail.burak.myapplication.SendMessageToAuthenticatedUser">
+
+
+    <EditText
+        android:id="@+id/sendMessage"
+        android:layout_width="500dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:ems="10"
+        android:hint="@string/bir_mesaj_yaz_n"
+        android:inputType="textMultiLine"
+        android:lines="4"
+        android:maxLines="10"
+        android:minLines="1"
+        android:textColor="#000000"
+        android:textColorHint="#FDFEFE" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/button_opendatepicker_radious"
+        android:text="@string/gonder"
+        android:textColor="#000000"/>
+</RelativeLayout>

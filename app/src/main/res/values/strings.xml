@@ -1,0 +1,404 @@
+<resources>
+    <string name="app_name">FindGraveyard</string>
+    <string name="google_maps_API_key">AIzaSyDgHcQm5gMmfORHzRc4Ai43MckRQxhKnZU</string>
+
+    <string name="findgraveyard">findgraveyard</string>
+    <string name="findGraveyard">FindGraveYard</string>
+
+    <string name="second_screen">Second Screen</string>
+
+    <string name="sign_up">Kayıt Ol</string>
+    <string name="password">şifre</string>
+    <string name="log_in">Giriş Yap</string>
+    <string name="email_adress">email adres </string>
+    <string name="sign_in">Giriş Yap</string>
+    <string name="name">Ad*</string>
+    <string name="select_user_type">Kullanıcı Tipi Seçiniz*</string>
+    <string name="save">Kayıt ol</string>
+    <string name="password_confirm">şifre(tekrar)*</string>
+
+    <string name="surname">Soyad*</string>
+    <string name="Name">Ad</string>
+
+
+    <array name="UserType">
+        <item>Kullanıcı Tipi Seç</item>
+        <item>Kullanıcı</item>
+        <item>Mezar Bakıcısı</item>
+    </array>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="male">Erkek</string>
+    <string name="female">Kadın</string>
+    <string name="home_page">Home Page</string>
+    <string name="open_date_picker">Gün seç</string>
+    <string name="date">Tarih</string>
+    <string name="user_e_mail_adress">Kullanıcı email *</string>
+    <string name="wellcome">Hoşgeldiniz</string>
+    <string name="title_activity_home__page">Ana Sayfa</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="todo">TODO</string>
+    <string name="Profie_name">Ad:</string>
+    <string name="Profile_surname">Soyad:</string>
+    <string name="Profile_email_adress">Email Adres:</string>
+    <string name="P_password">şifre:</string>
+    <string name="P_password_confim">şifre(tekrar):</string>
+
+    <string name="logout">TODO</string>
+    <string name="deceased_name">Merhumun Adı:</string>
+    <string name="deceased_surname">Merhumun Soyadı:</string>
+    <string name="Deceasedname"></string>
+    <string name="Deceasedsurname"></string>
+    <string name="deceased_gender">Merhumun Cinsiyeti:</string>
+    <string name="Deceased_male">Erkek</string>
+    <string name="Deceased_female">Kadın</string>
+    <string name="date_of_birth">Doğum Tarihi Seç</string>
+    <string name="birthdate">Doğum Tarihi:</string>
+    <string name="date_of_death">Ölüm Tarihi Seç</string>
+    <string name="deathdate">Ölüm Tarihi:</string>
+    <string name="gender">Cinsiyet:</string>
+    <string name="p_birth_date">Doğum Tarihi:</string>
+    <string name="addcamera">TODO</string>
+    <string name="show_image">TODO</string>
+    <string name="add_video">TODO</string>
+    <string name="save_Info">Kaydet</string>
+    <string name="biography_input">Merhumun Biyografisi giriniz..</string>
+    <string name="search_deceased_name">Merhumun adını ara</string>
+    <string name="dp_name">Merhumun Adı:</string>
+    <string name="dp_surname">Merhumun Soyadı:</string>
+    <string name="dp_gender">Merhumun Cinsiyeti:</string>
+    <string name="dp_birthdate">Doğum Tarihi:</string>
+    <string name="dp_deathdate">Ölüm Tarihi:</string>
+    <string name="dp_picture">Merhumun Resmi</string>
+    <string name="dp_pic_view">TODO</string>
+    <string name="dp_video">Merhumun Videosu</string>
+    <string name="dp_video_view">TODO</string>
+    <string name="d_biography"></string>
+    <string name="back_activity">OK</string>
+    <string name="DP_name"></string>
+    <string name="DP_surname"></string>
+    <string name="DP_gender"></string>
+    <string name="DP_birthdate"></string>
+    <string name="DP_deathdate"></string>
+    <string name="deceased_biography">Merhumun biyografisini yaz...</string>
+    <string name="scan_image">Mezartaşı Tara</string>
+    <string name="button_ok">Tamam</string>
+    <string name="user_phone_number">Telefon Numarası:</string>
+
+    <string name="enter_phone_number">Telefon numarası gir</string>
+    <string name="p_name">TextView</string>
+    <string name="p_surname">TextView</string>
+    <string name="p_email_adress">TextView</string>
+    <string name="p_password">TextView</string>
+    <string name="p_gender">TextView</string>
+    <string name="User_phone_number">TextView</string>
+    <string name="p_birthdate">TextView</string>
+    <string name="reset_password">Şifrenizi mi unuttunuz?</string>
+    <string name="button_reset_password">şifreyi sıfırla</string>
+    <string name="button_back"> >>geri</string>
+    <string name="enter_email_adress">email adres gir</string>
+    <string name="show_current_user"></string>
+    <string name="show_current_user_surname"></string>
+    <string name="show_current_user_email"></string>
+    <string name="show_user_password"></string>
+    <string name="show_current_user_gender"></string>
+    <string name="show_current_user_phone"></string>
+    <string name="show_current_user_birthdate"></string>
+    <string name="button_set_user">Kayıtlı Merhumlar</string>
+    <string name="search_a_deceased_s_name">Merhum Adı ara</string>
+    <string name="enter_deceased_name_goes_here">Merhum adı gir</string>
+    <string name="enter_deceased_surname_goes_here">Merhum adı gir</string>
+    <string name="user_type">Gsm No:</string>
+    <string name="user_type_changed">Kullanıcı Tipi:</string>
+    <string name="gender_changed">Cinsiyet:</string>
+    <string name="deceased_job">Merhumun mesleği:</string>
+    <string name="find_deceased_name"></string>
+    <string name="find_deceased_surname"></string>
+    <string name="enter_a_deceased_name">Merhum adı gir</string>
+    <string name="enter_a_deceased_surname">Merhum soyad gir</string>
+    <string name="search">Ara</string>
+    <string name="button_clear_list">Temizle</string>
+    <string name="deceased_image">TODO</string>
+    <string name="choose_from_galery">Galeriden seç</string>
+    <string name="take_a_photo">Fotoğraf çek</string>
+    <string name="text_message">mesaj yaz</string>
+
+
+    <array name="Cities">
+        <item>Şehir seç</item>
+        <item>Adana</item>
+        <item>Adıyaman</item>
+        <item>Afyon</item>
+        <item>Ağrı</item>
+        <item>Amasya</item>
+        <item>Ankara</item>
+        <item>Antalya</item>
+        <item>Artvin</item>
+        <item>Aydın</item>
+        <item>Balıkesir</item>
+        <item>Bilecik</item>
+        <item>Bingöl</item>
+        <item>Bitlis</item>
+        <item>Bolu</item>
+        <item>Burdur</item>
+        <item>Bursa</item>
+        <item>Çanakkale</item>
+        <item>Çankırı</item>
+        <item>Kemalpaşa</item>
+        <item>Çorum</item>
+        <item>Denizli</item>
+        <item>Diyarbakır</item>
+        <item>Edirne</item>
+        <item>Elazığ</item>
+        <item>Erzincan</item>
+        <item>Erzurum</item>
+        <item>Eskişehir</item>
+        <item>Gaziantep</item>
+        <item>Giresun</item>
+        <item>Gümüşhane</item>
+        <item>Hakkari</item>
+        <item>Hatay</item>
+        <item>Isparta</item>
+        <item>İçel (Mersin)</item>
+        <item>İstanbul</item>
+        <item>İzmir</item>
+        <item>Kars</item>
+        <item>Kastamonu</item>
+        <item>Kayseri</item>
+        <item>Kırklareli</item>
+        <item>Kırşehir</item>
+        <item>Kocaeli</item>
+        <item>Konya</item>
+        <item>Kütahya</item>
+        <item>Malatya</item>
+        <item>Manisa</item>
+        <item>K.maraş</item>
+        <item>Mardin</item>
+        <item>Muğla</item>
+        <item>Muş</item>
+        <item>Nevşehir</item>
+        <item>Niğde</item>
+        <item>Ordu</item>
+        <item>Ordu</item>
+        <item>Rize</item>
+        <item>Sakarya</item>
+        <item>Samsun</item>
+        <item>Siirt</item>
+        <item>Sinop</item>
+        <item>Sivas</item>
+        <item>Tekirdağ</item>
+        <item>Tokat</item>
+        <item>Trabzon</item>
+        <item>Tunceli</item>
+        <item>Şanlıurfa</item>
+        <item>Uşak</item>
+        <item>Van</item>
+        <item>Yozgat</item>
+        <item>Zonguldak</item>
+        <item>Aksaray</item>
+        <item>Bayburt</item>
+        <item>Karaman</item>
+        <item>Kırıkkale</item>
+        <item>Batman</item>
+        <item>Şırnak</item>
+        <item>Bartın</item>
+        <item>Ardahan</item>
+        <item>Iğdır</item>
+        <item>Yalova</item>
+        <item>Karabük</item>
+        <item>Kilis</item>
+        <item>Osmaniye</item>
+        <item>Düzce</item>
+
+    </array>
+    <array name="Izmır_Cemeteries">
+        <item>Mezarlık seç</item>
+        <item>Aşağı Narlıdere Mezarlığı</item>
+        <item>Bornova Yeni Mezarlığı</item>
+        <item>Bornova Eski Mezarlığı</item>
+        <item>Buca Gökdere Mezarlığı</item>
+        <item>Yeni Buca Mezarlığı</item>
+        <item>Eski Bornova Mezarlığı</item>
+        <item>Eski Balçova Mezarlığı</item>
+        <item>Cennet Bahçesi Mezarlığı</item>
+        <item>Dikili Mezarlığı</item>
+        <item>Doğançay Mezarlığı</item>
+        <item>Eski Foça Yeni Halk Mezarlığı</item>
+        <item>Gaziemir Mezarlığı</item>
+        <item>Hacılarkırı Mezarlığı</item>
+        <item>Işıkkent Mezarlığı</item>
+        <item>Kokluca Mezarlığı</item>
+        <item>Paşaköprü Hiristiyan Mezarlığı</item>
+        <item>Paşaköprü Müslüman Mezarlığı</item>
+        <item>Soğukkuyu Mezarlığı</item>
+        <item>Pınarbaşı Mezarlığı</item>
+        <item>Sarnıç Mezarlığı</item>
+        <item>Yeşilyurt Mezarlığı</item>
+    </array>
+    <array name="Ankara_Cemeteries">
+        <item>Mezarlık seç</item>
+        <item>Karşıyaka Mezarlığı</item>
+        <item>Cebeci Mezarlığı</item>
+        <item>Sincan Mezarlığı</item>
+        <item>Ortaköy Mezarlığı</item>
+    </array>
+    <array name="Empty">
+        <item>İlçe seç</item>
+    </array>
+    <array name="Adana_Cemeteries">
+        <item>Mezarlık seç</item>
+        <item>Akkapı Mezarlığı</item>
+        <item>Asri Mezarlığı</item>
+        <item>Kabasakal Mezarlığı</item>
+        <item>Küçükoba Mezarlığı</item>
+        <item>Buruk Mezarlığı</item>
+        <item>Adana Emniyet Müdürlüğü Polis Şehitliği</item>
+    </array>
+
+    <array name="Adıyaman_Cemeteries">
+        <item>Adıyaman Belediyesi Mezarlığı</item>
+        <item>Aşağı Karapınar Mezarlığı</item>
+        <item>Yenı Beledıye Mezarlığı</item>
+        <item>Aşağı Karapınar Mezarlığı</item>
+        <item>Süryani Kadim Mezarlığı</item>
+        <item>Karapınar Mezarlığı</item>
+    </array>
+    <array name="Afyon_Cemeteries">
+        <item>Kocatepe Mezarlığı</item>
+        <item>Bayraktepe Mezarlığı</item>
+        <item>Afyon cumhuriyet Şehitliği</item>
+        <item>Yzb.Agah Efendi Mezarlığı</item>
+    </array>
+    <array name="Amasya_Cemeteries">
+        <item>Tekirdede Mezarlığı</item>
+
+    </array>
+    <string name="title_activity_bottom_navigation_bar">BottomNavigationBar</string>
+    <string name="title_home">Ana Sayfa</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="profil_navbar">Profil</string>
+    <string name="merhum_ekle">Merhum Ekle</string>
+    <string name="ara">Ara</string>
+    <string name="mezar_bak_c_s_bul">Mezar bakıcısı bul</string>
+    <string name="mezarta_tarama">Mezartaşı Tarama</string>
+    <string name="textview_show_name">TextView</string>
+    <string name="textview_1">TextView</string>
+    <string name="textview_2">TextView</string>
+    <string name="textview_3">TextView</string>
+    <string name="textview_4">TextView</string>
+    <string name="textview_5">TextView</string>
+    <string name="Splash_findgraveyard"> FindGraveYard</string>
+    <string name="kayıtlı_merhumlar">Kayıtlı Merhumlarım</string>
+    <string name="DeceasedImage">TODO</string>
+    <string name="et_DeceasedFullname">Ad Soyad:</string>
+    <string name="et_Deceased_DOB">Doğum Tarihi:</string>
+    <string name="et_Deceased_DOD">Ölüm Tarihi:</string>
+    <string name="et_DeceasedGender">Cinsiyet:</string>
+    <string name="et_DeceasedJob">Meslek:</string>
+    <string name="et_DeceasedBio">Biyografi:</string>
+    <string name="et_ShowDeceasedJob"> </string>
+    <string name="et_ShowDeceasedFullname"> </string>
+    <string name="et_ShowDeceasedDOB"> </string>
+    <string name="et_ShowDeceasedDOD"> </string>
+    <string name="et_ShowDeceasedGender"> </string>
+    <string name="et_ShowDeceasedBio"></string>
+    <string name="Deceasedimage">TODO</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="set_grave_location"></string>
+    <string name="no_text">No Text</string>
+    <string name="check_in_grave_location">Mezarın Konumunu Bildir:</string>
+    <string name="show_grave_location">Mezarın yerini göster</string>
+    <string name="arat">Button</string>
+    <string name="yorum_gir">Yorum gir...</string>
+    <string name="yorum_yap">Yorum Yap</string>
+    <string name="switch_comments">Yorumları Gizle</string>
+    <string name="yorumlar_g_ster">Yorumları Göster</string>
+    <string name="yorumlar_gizle">Yorumları gizle</string>
+    <string name="profil_duzenle">Profil Düzenle/Kaydet</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="tab_text_1">Profilim</string>
+    <string name="tab_text_2">Merhumlar</string>
+    <string name="tab_text_3">Ziyaretçiler</string>
+    <string name="textview_tab1">TextView</string>
+    <string name="ad">Ad:</string>
+    <string name="textview">Soyad:</string>
+    <string name="textview_email">Email Adres:</string>
+    <string name="textview_sifre">Şifre:</string>
+    <string name="textview_kullantipi">Kullanıcı Tipi:</string>
+    <string name="textview_cinsiyet">Cinsiyet:</string>
+    <string name="textview_dogumtarihi">Doğum Tarihi:</string>
+    <string name="name_editText"> </string>
+    <string name="surname_editText"> </string>
+    <string name="email_editText"> </string>
+    <string name="textview_gsm">Gsm no:</string>
+    <string name="sifre_editText"> </string>
+    <string name="kullanıcıtipi_editText"> </string>
+    <string name="cinsiyet_editText"> </string>
+    <string name="dogumtarihi_editText"> </string>
+    <string name="gsm_editText"> </string>
+    <string name="textview_visitor">TextView</string>
+    <string name="title_activity_search_deceased_profile">SearchDeceasedProfile</string>
+    <string name="mezar_konumunu_g_ster">Mezar konumunu göster</string>
+    <string name="yorumlar_g_r_yorum_yap">Yorumları Gör/Yorum Yap</string>
+    <string name="back_to_search_page">TODO</string>
+    <string name="home">TODO</string>
+    <string name="d_zenle">düzenle</string>
+    <string name="sil">Hesabı sil</string>
+
+    <string name="title_activity_edit_deceased_profile">EditDeceasedProfile</string>
+    <string name="dogum_tarihi">Doğum Tarihi:</string>
+    <string name="ad_soyad">Ad Soyad:</string>
+    <string name="olum_tarihi">Ölüm Tarihi:</string>
+    <string name="cinsiyeti">Cinsiyet:</string>
+    <string name="meslekgi">Meslek:</string>
+    <string name="biyografi">Biyografi:</string>
+    <string name="Name_deceaesd">Name</string>
+    <string name="edit_deceased_info_button">TODO</string>
+    <string name="deceased_text_biyografi">Biyografi:</string>
+    <string name="deceaed_meslek">Meslek:</string>
+    <string name="deceased_changes_kaydet">Kaydet</string>
+    <string name="hesab_sil">Hesabı Sil</string>
+    <string name="image_edit">TODO</string>
+    <string name="bir_mesaj_yaz_n">bir mesaj yazın...</string>
+    <string name="gonder">Gönder</string>
+    <string name="backtoHomePage">TODO</string>
+    <string name="enter_your_message">Enter your message...</string>
+    <string name="gravecaregiver_photo">TODO</string>
+    <string name="back_home_page">TODO</string>
+    <string name="deceased_imag">TODO</string>
+    <string name="mezar_konumunu_bildirimi_yap">Mezar konumunu bildirimi yap</string>
+
+    <item name="visible" type="id" />
+    <item name="masked" type="id" />
+    <string name="title_activity_text_recognition">TextRecognition</string>
+    <string name="foto_raf_eklemek_i_in_butonuna_t_klay_n">Fotoğraf eklemek için + butonuna tıklayın</string>
+    <string name="sonuc">Sonuç</string>
+    <string name="resimin_n_g_sterimi">Resimin ön gösterimi</string>
+    <string name="image_ocr">TODO</string>
+    <string name="backtohomebutton">TODO</string>
+    <string name="add_image">Add image</string>
+    <string name="d_ad_soyad">Ad-Soyad:</string>
+    <string name="bio">Biyografi:</string>
+    <string name="l_m_tarihi">Ölüm Tarihi:</string>
+    <string name="do_um_tarihi">Doğum Tarihi:</string>
+    <string name="meslek">Meslek:</string>
+    <string name="cinsiyet">Cinsiyet:</string>
+    <string name="arama_sonu_lar">Arama Sonuçları:</string>
+    <string name="accept_icon">TODO</string>
+    <string name="reject_icon">TODO</string>
+    <string name="change_photo_tw">Fotoğrafı değiştir</string>
+    <string name="mezar_konumu_g_ncelle_ekle">Mezar konumu Güncelle/Ekle</string>
+
+
+</resources>

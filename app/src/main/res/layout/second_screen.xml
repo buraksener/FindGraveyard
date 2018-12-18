@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_color">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="800dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling">
+
+
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="215dp"
+            android:layout_height="46dp"
+            android:layout_alignEnd="@+id/spinnerTown"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/spinnerTown"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/spinner_user_type_radious"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="215dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/spinner2"
+            android:layout_alignStart="@+id/spinner2"
+            android:layout_below="@+id/spinner2"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="@string/name"
+            android:inputType="textPersonName"
+            android:textColor="#0D0C0D"
+            android:textColorHint="#0D0C0D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner2"
+            app:layout_constraintVertical_bias="0.039" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/editText3"
+            android:layout_alignStart="@+id/editText3"
+            android:layout_below="@+id/editText3"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:hint="@string/surname"
+            android:inputType="textPersonName"
+            android:textColor="#0D0C0D"
+            android:textColorHint="#0D0C0D"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3"
+            app:layout_constraintVertical_bias="0.037" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="92dp"
+            android:background="@drawable/button_register_radious"
+            android:enabled="true"
+            android:text="@string/save"
+            android:textColor="@android:color/background_light"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="217dp"
+            android:layout_height="44dp"
+            android:layout_alignLeft="@+id/editText5"
+            android:layout_alignStart="@+id/editText5"
+            android:layout_below="@+id/editText5"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textColor="#0D0C0D"
+            android:textColorHint="#0D0C0D"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.148"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+        <EditText
+            android:id="@+id/editText7"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText6"
+            android:layout_alignStart="@+id/editText6"
+            android:layout_below="@+id/editText6"
+            android:layout_marginTop="12dp"
+            android:ems="10"
+            android:hint="@string/password_confirm"
+            android:inputType="textPassword"
+            android:textColor="#0D0C0D"
+            android:textColorHint="#0D0C0D"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText6"
+            app:layout_constraintVertical_bias="0.079" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/checkBoxFemale"
+            android:layout_alignBottom="@+id/checkBoxFemale"
+            android:layout_alignLeft="@+id/phone_number"
+            android:layout_alignStart="@+id/phone_number"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:text="@string/male"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText7"
+            app:layout_constraintVertical_bias="0.362" />
+
+        <CheckBox
+            android:id="@+id/checkBoxFemale"
+            android:layout_width="89dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText7"
+            android:layout_alignRight="@+id/editText7"
+            android:layout_below="@+id/openDatePicker"
+            android:layout_marginTop="14dp"
+            android:text="@string/female"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.317"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText7"
+            app:layout_constraintVertical_bias="0.455" />
+
+        <Button
+            android:id="@+id/openDatePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText7"
+            android:layout_alignStart="@+id/editText7"
+            android:layout_below="@+id/phone_number"
+            android:layout_marginTop="17dp"
+            android:background="@drawable/button_opendatepicker_radious"
+            android:text="@string/open_date_picker"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMale"
+            app:layout_constraintVertical_bias="0.483" />
+
+        <TextView
+            android:id="@+id/textviewDate"
+            android:layout_width="148dp"
+            android:layout_height="21dp"
+            android:layout_alignTop="@+id/openDatePicker"
+            android:layout_marginLeft="26dp"
+            android:layout_marginStart="26dp"
+            android:layout_toEndOf="@+id/openDatePicker"
+            android:layout_toRightOf="@+id/openDatePicker"
+            android:text="@string/date"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.659"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/openDatePicker"
+            app:layout_constraintTop_toBottomOf="@+id/User_email"
+            app:layout_constraintVertical_bias="0.829" />
+
+        <EditText
+            android:id="@+id/User_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText5"
+            android:layout_alignRight="@+id/editText5"
+            android:layout_below="@+id/editText7"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:hint="@string/user_e_mail_adress"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#0D0C0D"
+            app:layout_constraintBottom_toTopOf="@+id/checkBoxMale"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText7" />
+
+        <EditText
+
+            android:id="@+id/phone_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/User_email"
+            android:layout_alignStart="@+id/User_email"
+            android:layout_below="@+id/User_email"
+            android:layout_marginTop="13dp"
+            android:digits="0123456789+"
+            android:ems="10"
+            android:hint="@string/enter_phone_number"
+            android:inputType="phone"
+            android:maxLength="14"
+            android:textColor="#0D0C0D"
+            android:textColorHint="#0D0C0D"
+            app:layout_constraintBottom_toTopOf="@+id/openDatePicker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMale"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/phone_number"
+            android:layout_alignLeft="@+id/checkBoxMale"
+            android:layout_alignStart="@+id/checkBoxMale"
+            android:layout_gravity="center|bottom"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="41dp"
+            android:layout_marginStart="41dp"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinnerTown"
+            android:layout_width="250dp"
+            android:layout_height="46dp"
+
+            android:layout_below="@+id/checkBoxMale"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/spinner_user_type_radious"
+            android:spinnerMode="dialog"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinnerCemetery"
+            android:layout_width="250dp"
+            android:layout_height="46dp"
+            android:layout_alignLeft="@+id/spinnerTown"
+            android:layout_alignStart="@+id/spinnerTown"
+            android:layout_below="@+id/spinnerTown"
+            android:layout_marginTop="63dp"
+            android:background="@drawable/spinner_user_type_radious">
+
+        </Spinner>
+
+    </RelativeLayout>
+
+</ScrollView>

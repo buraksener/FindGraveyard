@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_color"
+    android:orientation="vertical"
+    tools:context="com.sener35gmail.burak.myapplication.AddDeceasedInfo">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="850dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:id="@+id/DeceasedName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edit_DeceasedName"
+            android:layout_alignStart="@+id/edit_DeceasedName"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="9dp"
+            android:layout_marginStart="9dp"
+            android:layout_marginTop="21dp"
+            android:text="@string/deceased_name"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/Deceased_Surname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DeceasedName"
+            android:layout_alignStart="@+id/DeceasedName"
+            android:layout_below="@+id/edit_DeceasedName"
+            android:layout_marginTop="14dp"
+            android:text="@string/deceased_surname"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_DeceasedName"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/DeceasedName"
+            android:layout_marginLeft="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="7dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/Deceasedname"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <EditText
+            android:id="@+id/edit_Deceased_Surname"
+            android:layout_width="220dp"
+            android:layout_height="45dp"
+            android:layout_alignLeft="@+id/edit_DeceasedName"
+            android:layout_alignStart="@+id/edit_DeceasedName"
+            android:layout_below="@+id/Deceased_Surname"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="@string/Deceasedsurname"
+            android:textColor="#000000"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/Deceased_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_Deceased_Surname"
+            android:layout_marginTop="11dp"
+            android:layout_toLeftOf="@+id/Deceased_male"
+            android:layout_toStartOf="@+id/Deceased_male"
+            android:text="@string/deceased_gender"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/Deceased_male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/edit_Deceased_Surname"
+            android:layout_alignRight="@+id/edit_Deceased_Surname"
+            android:layout_alignTop="@+id/Deceased_gender"
+            android:text="@string/Deceased_male"
+            android:textColor="#000000"
+            android:textSize="12sp" />
+
+        <CheckBox
+            android:id="@+id/Deceased_female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Deceased_male"
+            android:layout_alignBottom="@+id/Deceased_male"
+            android:layout_marginLeft="21dp"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/Deceased_male"
+            android:layout_toRightOf="@+id/Deceased_male"
+            android:text="@string/Deceased_female"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/DateofBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/MultiBiography"
+            android:layout_alignStart="@+id/MultiBiography"
+            android:layout_alignTop="@+id/birthdate"
+            android:background="@drawable/button_opendatepicker_radious"
+            android:text="@string/date_of_birth"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/birthdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Deceased_male"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@+id/DeceasedName"
+            android:layout_toRightOf="@+id/DeceasedName"
+            android:text="@string/birthdate"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/DateofDeath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/DateofBirth"
+            android:layout_alignStart="@+id/DateofBirth"
+            android:layout_below="@+id/DateofBirth"
+            android:layout_marginTop="9dp"
+            android:background="@drawable/button_opendatepicker_radious"
+            android:text="@string/date_of_death" />
+
+        <TextView
+            android:id="@+id/deathdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/DateofDeath"
+            android:layout_alignBottom="@+id/DateofDeath"
+            android:layout_alignLeft="@+id/birthdate"
+            android:layout_alignStart="@+id/birthdate"
+            android:text="@string/deathdate"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/ic_add_a_photo_black_24dp"
+            android:contentDescription="@string/show_image"
+            />
+
+
+        <EditText
+            android:id="@+id/MultiBiography"
+            android:layout_width="400dp"
+            android:layout_height="150dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_deceased_job"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:gravity="top|left"
+            android:hint="@string/biography_input"
+            android:inputType="textMultiLine"
+            android:lines="4"
+            android:maxLines="3"
+            android:minLines="1"
+            android:scrollbars="vertical"
+            android:textColor="#1C2020"
+            android:textColorHint="#1C2020"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints,NotSibling,RtlHardcoded" />
+
+
+        <Button
+            android:id="@+id/saveInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/button_save_deceased_info_radious"
+            android:enabled="true"
+            android:text="@string/save_Info"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            tools:ignore="DuplicateIds,MissingConstraints,NotSibling,UnknownId" />
+
+        <TextView
+            android:id="@+id/deceased_job"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/MultiBiography"
+            android:layout_toLeftOf="@+id/edit_deceased_job"
+            android:layout_toStartOf="@+id/edit_deceased_job"
+            android:text="@string/deceased_job"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/edit_deceased_job"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:layout_alignLeft="@+id/Deceased_male"
+            android:layout_alignStart="@+id/Deceased_male"
+            android:layout_below="@+id/DateofDeath"
+            android:layout_marginTop="9dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/locationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#808B96"
+            android:textSize="17sp"
+
+            android:layout_below="@+id/checkIn_grave" />
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/backtoHomePage"
+            android:background="@drawable/ic_arrow_back_black_24dp" android:contentDescription="@string/backtoHomePage" />
+
+        <Button
+            android:id="@+id/checkIn_grave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/Deceased_female"
+            android:layout_alignRight="@+id/Deceased_female"
+            android:layout_below="@+id/MultiBiography"
+            android:background="@drawable/button_opendatepicker_radious"
+            android:drawableLeft="@drawable/ic_add_location_black_24dp"
+            android:drawableStart="@drawable/ic_add_location_black_24dp"
+            android:text="@string/mezar_konumunu_bildirimi_yap"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+</ScrollView>
+
+

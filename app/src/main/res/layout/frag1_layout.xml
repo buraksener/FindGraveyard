@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="31dp"
+        android:text="@string/ad"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="26dp"
+        android:text="@string/textview"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Soyad:" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView18"
+        android:layout_alignStart="@+id/textView18"
+        android:layout_below="@+id/textView18"
+        android:layout_marginTop="24dp"
+        android:text="@string/textview_email"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Email Adres:" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView19"
+        android:layout_alignStart="@+id/textView19"
+        android:layout_below="@+id/textView19"
+        android:layout_marginTop="17dp"
+        android:text="@string/textview_sifre"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="şifre:" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView20"
+        android:layout_alignStart="@+id/textView20"
+        android:layout_below="@+id/textView20"
+        android:layout_marginTop="21dp"
+        android:text="@string/textview_kullantipi"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Kullanıcı tipi:" />
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText19"
+        android:layout_marginTop="24dp"
+        android:text="@string/textview_cinsiyet"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Cinsiyet" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText20"
+        android:layout_marginTop="13dp"
+        android:text="@string/textview_dogumtarihi"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Doğum Tarihi:" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView29"
+        android:layout_alignStart="@+id/textView29"
+        android:layout_below="@+id/textView29"
+        android:layout_marginTop="24dp"
+        android:text="@string/textview_gsm"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:text="Gsm No:" />
+
+    <EditText
+        android:id="@+id/editText15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_changeProfileInfo"
+        android:layout_alignStart="@+id/btn_changeProfileInfo"
+        android:layout_alignTop="@+id/textView17"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:ems="10"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:text="@string/name_editText" />
+
+    <EditText
+        android:id="@+id/editText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText15"
+        android:layout_alignStart="@+id/editText15"
+        android:layout_alignTop="@+id/textView18"
+        android:layout_marginLeft="7dp"
+        android:layout_marginStart="7dp"
+        android:ems="10"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:text="@string/surname_editText" />
+
+    <EditText
+        android:id="@+id/editText17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText16"
+        android:layout_alignStart="@+id/editText16"
+        android:layout_alignTop="@+id/textView19"
+        android:ems="10"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:text="@string/email_editText" />
+
+    <EditText
+        android:id="@+id/editText18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText17"
+        android:layout_alignStart="@+id/editText17"
+        android:layout_alignTop="@+id/textView20"
+        android:ems="10"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:text="@string/sifre_editText" />
+
+    <EditText
+        android:id="@+id/editText19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText18"
+        android:layout_alignStart="@+id/editText18"
+        android:layout_alignTop="@+id/textView21"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/kullanıcıtipi_editText" />
+
+    <EditText
+        android:id="@+id/editText20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView28"
+        android:layout_alignBottom="@+id/textView28"
+        android:layout_alignLeft="@+id/editText19"
+        android:layout_alignStart="@+id/editText19"
+        android:ems="10"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:text="@string/cinsiyet_editText" />
+
+    <EditText
+        android:id="@+id/editText21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText20"
+        android:layout_alignStart="@+id/editText20"
+        android:layout_alignTop="@+id/textView29"
+        android:ems="10"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:text="@string/dogumtarihi_editText" />
+
+    <EditText
+        android:id="@+id/editText22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText21"
+        android:layout_alignStart="@+id/editText21"
+        android:layout_alignTop="@+id/textView30"
+        android:ems="10"
+        android:textStyle="italic"
+        android:inputType="textPersonName"
+        android:text="@string/gsm_editText" />
+
+    <Button
+        android:id="@+id/btn_changeProfileInfo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText22"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_radious_show_comments"
+        android:enabled="true"
+        android:text="@string/profil_duzenle" />
+
+    </RelativeLayout>
+</ScrollView>

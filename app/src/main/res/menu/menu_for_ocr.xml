@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/backtoHome"
+        android:icon="@drawable/ic_arrow_back_black_24dp"
+        android:title="backTohome"
+        app:showAsAction="always">
+
+    </item>
+    <item  android:title="@string/add_image"
+        app:showAsAction="always"
+        android:id="@+id/addImage"
+        android:icon="@drawable/ic_image_black_24dp"
+        android:color="@color/white"
+        >
+
+    </item>
+
+</menu>
